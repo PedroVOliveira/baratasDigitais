@@ -1,0 +1,43 @@
+header {
+    background:transparent;
+    top:0;
+    position:fixed;
+    width:100vw;
+    height:80px;
+    z-index:80;
+
+    .navbar {
+        
+        .container {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            height:80px;
+            
+
+            a {
+                color:white;
+                
+            }
+
+            .logo {
+                font-size:2.0rem;
+            }
+
+            ul {
+                display:flex;
+
+                li {
+                    margin:0 8px;
+                    font-size:1.2rem;
+                    font-weight:300;
+                    margin: 0 1.2rem;
+                }
+
+                a:hover {
+                    color:$green;
+                }
+            }
+        }
+    }
+}

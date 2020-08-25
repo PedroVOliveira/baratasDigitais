@@ -2,14 +2,18 @@
 @import './global/font-awesome.min';
 @import './global/tooplate-style';
 
+// Colors
+@import './global/colors';
 // Geral Styles
 @import './global/global';
+
 
 @import './global/reset';
 
 // Sections
-
+@import './sections/header/header';
 @import './sections/about/about';
 @import './sections/contact/contact';
 @import './sections/home/home';
 @import './sections/product/product';
+
