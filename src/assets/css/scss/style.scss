@@ -1,6 +1,15 @@
 // Fonts
-@import './font-awesome';
-@import './tooplate-style';
+@import './global/font-awesome.min';
+@import './global/tooplate-style';
 
+// Geral Styles
+@import './global/global';
 
 @import './global/reset';
+
+// Sections
+
+@import './sections/about/about';
+@import './sections/contact/contact';
+@import './sections/home/home';
+@import './sections/product/product';
