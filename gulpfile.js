@@ -29,9 +29,9 @@ function compilerSass() {
 exports.compilerSass = compilerSass;
 
 function gulpJS() {
-    return gulp.src('src/assets/js/*.js')
+    return gulp.src('src/assets/js/**/*.js')
     .pipe(concat('main.js'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest('src/dist/js/'))
     .pipe(browserSync.stream())
 }
@@ -67,7 +67,7 @@ function watch() {
     // injeta os arquivos css no sync
     gulp.watch('src/assets/css/scss/**/*.scss',compilerSass)
     // gulp.watch('src/assets/js/plugins/**/*.js', pluginJS)
-    gulp.watch('src/assets/js/*.js', gulpJS)
+    gulp.watch('src/assets/js/**/*.js', gulpJS).on('change',browserSync.reload);
     // Da o reload no html
     gulp.watch('*.html').on('change',browserSync.reload);
 }
