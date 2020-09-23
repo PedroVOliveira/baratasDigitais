@@ -2,7 +2,8 @@ section#home {
     background-color:#292E49;
     background-image:url(../../assets/img/home-bg.jpg);
     background-size:cover;
-    height:100vh;
+    background-attachment: fixed;
+    height:60vh;
     // padding-top:100px;
     
     .overlay {
@@ -19,6 +20,7 @@ section#home {
 
     .home-info {
         position:relative;
+        margin-top:-180px!important;
     }
 
     form {
@@ -28,6 +30,11 @@ section#home {
             padding:unset;
             padding-left:1.2rem;
             outline:none;
+            width:320px;
+        }
+
+        .form-control {
+            right:3.6rem!important;
         }
     }
     

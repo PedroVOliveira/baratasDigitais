@@ -1,0 +1,73 @@
+section#features {
+    
+    .container {
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        
+        .feature-content {
+            h2 {
+                font-size:2.8rem;
+                margin-bottom:40px;
+            }
+
+            ul {
+                display:flex;
+                margin-bottom:40px;
+                
+
+                li {
+                    font-size:1.4rem;
+                    
+                    a {
+                        color:#999999;
+                    }
+                    
+                    .team-img {
+                        grid-area:image;
+                    }
+
+                    hgroup {
+                        grid-area:content;
+                    }
+                    
+                }
+
+                li+ li {
+                    margin:0 16px;
+                }
+
+                li.active, li:hover {
+                    padding-bottom:10px;
+                    border-bottom:3px solid $green;
+                    
+                    a {
+                        color:#202020;
+                    }
+                }
+                
+            }
+
+            .div-feature-content-tab {
+
+                .tab-item {
+                    margin-bottom:12px;
+                    
+                    h3 {
+                        font-size:1.8rem;
+
+                    }
+
+                    p {
+                        margin-top:12px;
+                    }
+                }
+            }
+        }
+
+        .feature-img {
+            img {
+                max-width:100%;
+            }
+        }
+    }
+}
