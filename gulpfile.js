@@ -29,9 +29,12 @@ function compilerSass() {
 exports.compilerSass = compilerSass;
 
 function gulpJS() {
-    return gulp.src('src/assets/js/**/*.js')
+    return gulp.src('src/assets/js/main/**/*.js')
     .pipe(concat('main.js'))
-    // .pipe(uglify())
+    .pipe(babel({
+        presets: ['env']
+    }))
+    .pipe(uglify())
     .pipe(gulp.dest('src/dist/js/'))
     .pipe(browserSync.stream())
 }
@@ -45,7 +48,7 @@ function pluginJS() {
             'src/assets/js/plugins/*.js'
         ])
     .pipe(concat('plugins.js'))
-    .pipe(gulp.dest('src/dist/js/'))
+    .pipe(gulp.dest('src/dist/plugins/'))
     .pipe(browserSync.stream())
 }
 
@@ -66,7 +69,7 @@ exports.browser = browser;
 function watch() {
     // injeta os arquivos css no sync
     gulp.watch('src/assets/css/scss/**/*.scss',compilerSass)
-    // gulp.watch('src/assets/js/plugins/**/*.js', pluginJS)
+    gulp.watch('src/assets/js/plugins/**/*.js', pluginJS)
     gulp.watch('src/assets/js/**/*.js', gulpJS).on('change',browserSync.reload);
     // Da o reload no html
     gulp.watch('*.html').on('change',browserSync.reload);
