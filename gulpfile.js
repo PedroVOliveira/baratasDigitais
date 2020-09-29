@@ -37,19 +37,19 @@ function gulpJS() {
 }
 exports.gulpJS = gulpJS;
 
-// function pluginJS() {
-//     return gulp
-//     .src(
-//         [
+function pluginJS() {
+    return gulp
+    .src(
+        [
             
-//             'js/plugins/*.js'
-//         ])
-//     .pipe(concat('plugins.js'))
-//     .pipe(gulp.dest('js/'))
-//     .pipe(browserSync.stream())
-// }
+            'src/assets/js/plugins/*.js'
+        ])
+    .pipe(concat('plugins.js'))
+    .pipe(gulp.dest('src/dist/js/'))
+    .pipe(browserSync.stream())
+}
 
-// exports.pluginJS = pluginJS; 
+exports.pluginJS = pluginJS; 
 
 function browser() {
     browserSync.init({
@@ -78,4 +78,4 @@ exports.watch = watch;
 
 // Tarefa padrão. Executa ao mesmo tempo as duas tarefas
 // gulp.task('default',gulp.parallel('watch','browser-sync',compilerSass,'mainjs','pluginjs'));
-exports.default = gulp.parallel(watch, browser, compilerSass, gulpJS,)
+exports.default = gulp.parallel(watch, browser, compilerSass, gulpJS, pluginJS);

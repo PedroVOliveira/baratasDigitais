@@ -42,37 +42,37 @@ section#about {
                     }
                     
 
-                    .team-content:after {
-                        display: block;
-                        margin: 0 auto;
-                        position: absolute;
-                        bottom: -15px;
-                        right: 0;
-                        left: 0;
-                        content: "";
-                        width: 0;
-                        height: 0;
-                        border-right: 15px solid transparent;
-                        border-left: 15px solid transparent;
-                        border-top: 15px solid #ffffff;
-                    }
+                    // .team-content:after {
+                    //     display: block;
+                    //     margin: 0 auto;
+                    //     position: absolute;
+                    //     bottom: -50px;
+                    //     right: 0;
+                    //     left: 0;
+                    //     content: "";
+                    //     width: 0;
+                    //     height: 0;
+                    //     border-right: 15px solid transparent;
+                    //     border-left: 15px solid transparent;
+                    //     border-top: 15px solid #ffffff;
+                    // }
                     
                 }
 
-                li:before {
-                    display: block;
-                    margin: 0 auto;
-                    position: absolute;
-                    bottom: -15px;
-                    right: 0;
-                    left: 0;
-                    content: "";
-                    width: 0;
-                    height: 0;
-                    border-right: 15px solid transparent;
-                    border-left: 15px solid transparent;
-                    border-top: 15px solid #ffffff;
-                }
+                // li:before {
+                //     display: block;
+                //     margin: 0 auto;
+                //     position: absolute;
+                //     bottom: -15px;
+                //     right: 0;
+                //     left: 0;
+                //     content: "";
+                //     width: 0;
+                //     height: 0;
+                //     border-right: 15px solid transparent;
+                //     border-left: 15px solid transparent;
+                //     border-top: 15px solid #ffffff;
+                // }
                 
             }
 
