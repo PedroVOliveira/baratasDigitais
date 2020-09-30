@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/assets/css/owl/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     
+    
 </head>
 <body>
     <header>
@@ -240,20 +241,35 @@
     <section id="contact">
         <div class="container">
             <h2>Diga olá para nós</h2>
-            <form action="post">
+            <form action="post" id="contact-form">
                 <div class="contact-form-inputs-submits">
-                    <input type="text" placeholder="Full Name"/>
-                    <input type="text" placeholder="Full Name"/>
-                    <button type="submit">Send Menssage</button>
+                    <input type="text" placeholder="Full Name" class="form-control" required/>
+                    <input type="text" placeholder="Email " class="form-control" required/>
+                    <input type="submit" class="form-control" placeholder="Send Menssage" value="Send Menssage" required>
                 </div>
                 <div class="contact-form-textarea">
-                    <textarea placeholder="Your message"></textarea>
+                    <textarea class="form-control" placeholder="Your message"></textarea>
                 </div>
-
             </form>
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <span>Copyright &copy; Baratas Digitais: Webmedias</span>
+            <ul>
+                <li>
+                    <a href="#" class="fa fa-facebook-square" attr="facebook icon"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     
 
 </body>
