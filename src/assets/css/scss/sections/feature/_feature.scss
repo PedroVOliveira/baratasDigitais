@@ -5,6 +5,8 @@ section#features {
         grid-template-columns:repeat(2,1fr);
         
         .feature-content {
+            
+
             h2 {
                 font-size:2.8rem;
                 margin-bottom:40px;
@@ -48,6 +50,7 @@ section#features {
             }
 
             .div-feature-content-tab {
+                display:none;
 
                 .tab-item {
                     margin-bottom:12px;
@@ -61,6 +64,9 @@ section#features {
                         margin-top:12px;
                     }
                 }
+            }
+            .div-feature-content-tab.active {
+                display:block;
             }
         }
 
