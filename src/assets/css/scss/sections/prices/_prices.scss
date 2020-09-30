@@ -46,6 +46,10 @@ section#prices {
                     
                 }
 
+                ul {
+                    margin:20px 0;
+                }
+
                 li {
                     color:#757575;
                     line-height: 24px;
@@ -72,6 +76,7 @@ section#prices {
 
 @media (max-width:738px) {
     section#prices {
+
         .container {
             
             .prices-cards {
