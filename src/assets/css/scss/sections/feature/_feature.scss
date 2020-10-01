@@ -77,3 +77,22 @@ section#features {
         }
     }
 }
+
+@media (max-width:738px) {
+    section#features {
+
+        .container {
+            grid-template-columns: 1fr!important;
+
+            .feature-content {
+
+                ul {
+
+                    li+li {
+                       margin:0 8px; 
+                    }
+                }
+            }
+        }
+    }
+}

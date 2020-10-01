@@ -26,6 +26,7 @@ section#home {
     form {
 
         input {
+            box-sizing: border-box;
             border:0;
             padding:unset;
             padding-left:1.2rem;
@@ -38,4 +39,37 @@ section#home {
         }
     }
     
+}
+
+@media (max-width:738px) {
+    section#home {
+
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-position: 50% -25px;
+        .container {
+
+            form {
+                display:flex;
+                flex-direction:column;
+
+                input {
+                    width:100%;
+                }
+                .home-info {
+                    margin-top:0!important;
+                }
+                .form-control {
+                    right:0!important;
+                    width:100%;
+                }
+
+                .form-control + .form-control {
+                    margin-top:10px!important;
+                }
+            }
+
+
+        }
+    }
 }

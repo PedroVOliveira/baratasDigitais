@@ -50,3 +50,28 @@ header {
         }
     }
 }
+
+
+@media (max-width:738px) {
+    
+    header {
+
+        .navbar {
+            background:white;
+
+            .container {
+
+                a {
+                    color:black;
+                }
+                ul {
+                    display:none;
+                }
+
+                .email {
+                    display:none;
+                }
+            }
+        }
+    }
+}

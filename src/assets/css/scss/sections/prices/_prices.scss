@@ -81,6 +81,11 @@ section#prices {
             
             .prices-cards {
                 grid-template-columns: 1fr!important;
+
+                .price-card + .price-card {
+                    margin:15px 0;
+                    padding:30px 30px;
+                }
             }
         }
     }

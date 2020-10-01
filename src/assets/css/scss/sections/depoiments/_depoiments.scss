@@ -88,3 +88,32 @@ section#depoiments {
         }
     }
 }
+
+
+
+@media (max-width:738px) {
+    section#depoiments {
+
+        .container {
+            flex-direction: column;
+            width:100vw!important;
+
+            .depoiments-img {
+                
+                img {
+                    width:100%
+                }
+            }
+
+            .depoiments-content {
+                width:100%;
+                box-sizing: border-box;
+                padding:40px!important;
+                margin-top:-3px;
+                h2 {
+                    text-align: left!important;
+                }
+            }
+        }
+    }
+}
